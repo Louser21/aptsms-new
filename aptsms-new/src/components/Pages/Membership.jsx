@@ -5,10 +5,10 @@ import { Card, CardContent } from "../ui/card";
 
 function Membership() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 to-emerald-100 py-12 px-4 flex flex-col items-center justify-center">
+    <div className="min-h-screen bg-gradient-to-br from-green-50 to-emerald-100 py-6 px-2 flex flex-col items-center justify-center">
       <div className="max-w-3xl w-full mx-auto">
         {/* Header */}
-        <div className="text-center mb-8">
+        <div className="text-center mb-4">
           <h1 className="text-4xl font-bold text-green-800 mb-2">
             Membership
           </h1>
@@ -16,13 +16,13 @@ function Membership() {
         </div>
 
         <Card>
-          <CardContent className="p-8 md:p-10 flex flex-col items-center">
-            <p className="text-gray-700 dark:text-gray-200 text-lg mb-8 text-center">
+          <CardContent className="p-4 md:p-6 flex flex-col items-center">
+            <p className="text-gray-700 dark:text-gray-200 text-sm mb-4 text-center">
               Become a member of <b>APTSMS</b> and join a vibrant community of
               mathematical scientists, educators, and students. Enjoy exclusive
               access to events, resources, and networking opportunities.
             </p>
-            <div className="w-full flex flex-col md:flex-row flex-wrap gap-6 mb-8">
+            <div className="w-full flex flex-col md:flex-row flex-wrap gap-2 mb-4">
               <div className="flex-1 bg-gradient-to-br from-green-100 to-green-200 dark:from-green-900 dark:to-green-800 rounded-2xl p-6 flex flex-col items-center min-w-[200px] shadow-md border-2 border-green-300 dark:border-green-800 hover:scale-105 hover:shadow-xl transition-all duration-300">
                 <span className="mb-2 text-4xl">🏢</span>
                 <span className="text-green-800 font-bold text-xl md:text-lg mb-2">

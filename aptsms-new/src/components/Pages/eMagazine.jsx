@@ -3,14 +3,14 @@ import React from 'react';
 const JournalCard = () => {
   return (
     <div className="flex justify-center items-center min-h-screen bg-gray-50">
-      <div className="w-full max-w-sm p-6 border rounded shadow-sm text-center">
+      <div className="w-full max-w-sm p-3 border rounded shadow-sm text-center">
         <h2 className="text-xl font-semibold underline mb-1">
           Mathema Sciences Today
         </h2>
-        <p className="text-sm text-gray-700 mb-4">
+        <p className="text-xs text-gray-700 mb-2">
           Volume 1 Issue 1 June 2021
         </p>
-        <div className="flex justify-center space-x-3">
+        <div className="flex justify-center space-x-1">
           <a
             href="https://aptsms.org/assets/pdf/e-magazine.pdf"
             target="_blank"

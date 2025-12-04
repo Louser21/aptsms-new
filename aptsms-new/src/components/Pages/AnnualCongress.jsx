@@ -101,7 +101,7 @@ const CongressPage = () => {
   }).filter(Boolean))].sort();
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-white via-green-50 to-green-100 py-8 px-4">
+    <div className="min-h-screen bg-gradient-to-br from-white via-green-50 to-green-100 py-4 px-2">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {[...Array(8)].map((_, i) => (
@@ -160,7 +160,7 @@ const CongressPage = () => {
 
         {/* Search and Filter Section */}
         <motion.div
-          className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 mb-8 shadow-lg border border-green-100"
+          className="bg-white/80 backdrop-blur-sm rounded-2xl p-3 mb-3 shadow-lg border border-green-100"
           variants={itemVariants}
         >
           <div className="flex flex-col md:flex-row gap-4">
@@ -197,7 +197,7 @@ const CongressPage = () => {
 
         {/* Congress Cards Grid */}
         <motion.div
-          className="grid gap-6 md:grid-cols-2 lg:grid-cols-3"
+          className="grid gap-2 md:grid-cols-2 lg:grid-cols-3"
           variants={containerVariants}
         >
           {filteredData.map((congress, index) => (
@@ -264,7 +264,7 @@ const CongressPage = () => {
           variants={itemVariants}
         >
           <h2 className="text-2xl font-bold mb-4">Congress Statistics</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
             <div>
               <div className="text-3xl font-bold">{congressData.length}</div>
               <div className="text-green-100">Total Congresses</div>

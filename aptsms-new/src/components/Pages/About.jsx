@@ -63,10 +63,10 @@ const timelineEvents = [
 
 const About = () => {
     return (
-        <div className="min-h-screen bg-gradient-to-br from-green-50 to-emerald-100 p-4 md:p-8">
+        <div className="min-h-screen bg-gradient-to-br from-green-50 to-emerald-100 p-2 md:p-4">
             <div className="max-w-4xl mx-auto">
                 {/* Header */}
-                <div className="text-center mb-8">
+                <div className="text-center mb-4">
                     <h1 className="text-4xl font-bold text-green-800 mb-2">
                         About APTSMS
                     </h1>
@@ -74,23 +74,23 @@ const About = () => {
                 </div>
 
                 <Card>
-                    <CardContent className="p-8 md:p-10">
-                        <p className="mb-4 text-gray-700">
+                    <CardContent className="p-4 md:p-6">
+                        <p className="mb-2 text-gray-700">
                             The <strong>Andhra Pradesh Society for Mathematical Sciences</strong> (APSMS) was established in 1986 at the Department of Mathematics, Osmania University, Hyderabad. APSMS was formed with the pioneering efforts of Late Prof. N.Ch. Pattabhi Ramacharyulu, the then Professor of Mathematics, Regional Engineering College, Warangal (Now National Institute of Technology Warangal), and Late Prof. P.V. Arunachalam, the then Professor of Mathematics, Sri Venkateshwara University, Tirupati, &amp; Former Vice Chancellor, Dravidian University.
                         </p>
-                        <p className="mb-4 text-gray-700">
+                        <p className="mb-2 text-gray-700">
                             Since its inception, it has been consistently and successfully organising its annual congresses, providing a common platform for scientists, researchers (young and old), technologists, and engineers to present and discuss the current research work conducted by them individually or in groups in their specialised areas of mathematical sciences. It has been attracting a large number of researchers not only from our country but also from abroad.
                         </p>
                         <p className="mb-4 text-gray-700">
                             The society has made significant progress in encouraging inter-disciplinary research in the mathematical sciences. Young researchers / scientists are encouraged by the Society through awards, which are specifically designed for that purpose.
                         </p>
-                        <p className="mb-8 text-gray-700">
+                        <p className="mb-2 text-gray-700">
                             APSMS was renamed as <strong>Andhra Pradesh and Telangana Society for Mathematical Sciences</strong> (APTSMS) in 2018 in consequence of the separation of the Andhra Pradesh state as Andhra Pradesh and Telangana states.
                         </p>
 
-                        <div className="mb-8">
-                            <h3 className="text-lg font-semibold text-green-600 mb-4">Timeline</h3>
-                            <div className="space-y-6">
+                        <div className="mb-4">
+                            <h3 className="text-base font-semibold text-green-600 mb-2">Timeline</h3>
+                            <div className="space-y-2">
                                 {timelineEvents.map((event) => (
                                     <div
                                         key={event.year}
@@ -108,7 +108,7 @@ const About = () => {
                             </div>
                         </div>
 
-                        <div className="flex flex-wrap justify-center gap-4 mt-8">
+                        <div className="flex flex-wrap justify-center gap-2 mt-4">
                             <Button className="bg-teal-600 hover:bg-teal-700 text-white px-5 py-2 rounded-lg shadow">
                                 <Link to="/announcement">
                                     <b>Join APTSMS</b>

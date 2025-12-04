@@ -24,16 +24,16 @@ const Announcement = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 to-emerald-100 py-8 px-4">
+    <div className="min-h-screen bg-gradient-to-br from-green-50 to-emerald-100 py-4 px-2">
       <div className="max-w-4xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-8">
+        <div className="text-center mb-4">
           <h1 className="text-4xl font-bold text-green-800 mb-2">Announcement</h1>
           <div className="w-24 h-1 bg-green-500 mx-auto rounded-full"></div>
         </div>
 
         {/* Main Announcement Card */}
-        <Card className="mb-8">
+        <Card className="mb-3">
           <CardContent className="p-0">
             {/* Alert Banner */}
             <div className="bg-gradient-to-r from-amber-100 to-yellow-100 border-l-4 border-amber-400 p-6">

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function EndowmentLectures() {
   return (
-    <div className="space-y-6 p-6">
+    <div className="space-y-2 p-3">
       <motion.h1
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
@@ -15,7 +15,7 @@ export default function EndowmentLectures() {
 
       <Card className="border-green-800 border-3 bg-green-50">
         <CardContent className="space-y-4 p-6">
-          <h2 className="text-2xl font-semibold">The following Endowment Lectures are arranged in the annual congress :</h2>
+          <h2 className="text-base font-semibold">The following Endowment Lectures are arranged in the annual congress :</h2>
           <ul className="list-disc pl-5 space-y-2">
             <li>Prof. N. V.Subramanyam Endowment Lecture in Algebra - Sponsored by Prof.N. V.Subramanyam Shashthyabdipurti Felicitation Committee.</li>
             <li>Prof. Kesiraju Satyanarayana memorial Lecture in Geometry - Sponsored by Prof. N.Ch.Pattabhi Ramacharyulu.</li>

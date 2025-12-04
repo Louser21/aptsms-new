@@ -2,22 +2,22 @@ import React from "react";
 
 function Events() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 to-white p-4 md:p-8">
+    <div className="min-h-screen bg-gradient-to-br from-green-50 to-white p-2 md:p-4">
       <div className="max-w-3xl mx-auto">
-        <div className="text-center mb-8">
+        <div className="text-center mb-4">
           <h1 className="text-4xl md:text-3xl font-bold text-gray-800 mb-2">
             Upcoming Events
           </h1>
           <div className="w-32 h-1 bg-gradient-to-r from-green-400 to-green-600 mx-auto rounded-full"></div>
         </div>
 
-        <div className="bg-white rounded-2xl shadow-xl overflow-hidden border border-green-100 p-8">
-          <h2 className="text-2xl font-semibold text-green-700 mb-2">
+        <div className="bg-white rounded-2xl shadow-xl overflow-hidden border border-green-100 p-4">
+          <h2 className="text-lg font-semibold text-green-700 mb-1">
             XXXIII Annual Congress of APTSMS &amp; International Conference on
             Applied Mathematics and Computing 2025 (ICAMC2025)
           </h2>
-          <div className="mb-4">
-            <span className="inline-block bg-green-100 text-green-800 text-sm font-semibold px-3 py-1 rounded-full mr-2 mb-2">
+          <div className="mb-3">
+            <span className="inline-block bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded-full mr-2 mb-1">
               17th - 19th May 2025
             </span>
             <span className="inline-block bg-blue-100 text-blue-800 text-sm font-semibold px-3 py-1 rounded-full mb-2">
@@ -32,8 +32,8 @@ function Events() {
             </span>{" "}
             in collaboration with <span className="font-medium">APTSMS</span>
           </p>
-          <div className="mb-8">
-            <h3 className="text-lg font-semibold text-green-600 mb-2">Registration Fee</h3>
+          <div className="mb-3">
+            <h3 className="text-base font-semibold text-green-600 mb-1">Registration Fee</h3>
             <div className="overflow-x-auto">
               <table className="min-w-full border border-green-200 text-sm">
                 <thead>

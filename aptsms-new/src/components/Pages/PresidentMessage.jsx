@@ -3,16 +3,16 @@ import { Mail, User } from 'lucide-react';
 
 const PresidentMessage = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 to-white p-4 md:p-8">
+    <div className="min-h-screen bg-gradient-to-br from-green-50 to-white p-2 md:p-4">
       <div className="max-w-3xl mx-auto">
-        <div className="text-center mb-8">
+        <div className="text-center mb-4">
           <h1 className="text-4xl md:text-3xl font-bold text-gray-800 mb-2">
             President's Message
           </h1>
           <div className="w-32 h-1 bg-gradient-to-r from-green-400 to-green-600 mx-auto rounded-full"></div>
         </div>
-        <div className="bg-white rounded-2xl shadow-xl overflow-hidden border border-green-100 p-8">
-          <div className="flex flex-col md:flex-row items-center mb-6 gap-6">
+        <div className="bg-white rounded-2xl shadow-xl overflow-hidden border border-green-100 p-4">
+          <div className="flex flex-col md:flex-row items-center mb-3 gap-2">
             <img 
               src={`${import.meta.env.BASE_URL}images/Srinivasacharya.jpg`} 
               alt="Prof. D Srinivasacharya"
@@ -24,8 +24,8 @@ const PresidentMessage = () => {
               <div className="text-gray-500 text-sm">Department of Mathematics, NIT Warangal, Telangana</div>
             </div>
           </div>
-          <div className="prose prose-xl max-w-none text-gray-800 leading-relaxed space-y-8 text-justify">
-            <div className="text-2xl font-medium text-gray-900 mb-8">
+          <div className="prose prose-sm max-w-none text-gray-800 leading-relaxed space-y-3 text-justify">
+            <div className="text-lg font-medium text-gray-900 mb-3">
               Dear APTSMS members, friends,
             </div>
             <p className="text-lg leading-8">APTSMS, a well-established forum for researchers in all areas of Mathematics, Statistics, and Operations Research, has gained the admiration of all researchers, including those from various research/academic organisations. This has been accomplished because of the enormous selfless hard work and dedication from a certain number of people from the inception. Several eminent mathematicians in the state have acted as presidents and other office bearers and contributed to the development activities of the society. I hope, in the coming years, it will be able to attract more people under the umbrella of APTSMS.</p>

@@ -223,7 +223,7 @@ export default function InternationalConferencesPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-white via-green-50/30 to-emerald-50/20 relative overflow-hidden">
       
-      <div className="container mx-auto px-4 py-12 relative z-10">
+      <div className="container mx-auto px-2 py-4 relative z-10">
         
         <motion.div 
           className="text-center mb-16"
@@ -252,7 +252,7 @@ export default function InternationalConferencesPage() {
           </motion.h1>
             
           <motion.p 
-            className="text-xl text-gray-600 mb-10 max-w-4xl mx-auto leading-relaxed"
+            className="text-sm text-gray-600 mb-3 max-w-4xl mx-auto leading-relaxed"
             variants={itemVariants}
           >
             Fostering global collaboration and advancing mathematical research through prestigious international conferences
@@ -261,7 +261,7 @@ export default function InternationalConferencesPage() {
 
         
         <motion.div 
-          className="grid gap-8 max-w-6xl mx-auto"
+          className="grid gap-2 max-w-6xl mx-auto"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}

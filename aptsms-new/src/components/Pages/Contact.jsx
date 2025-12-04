@@ -7,7 +7,7 @@ const ContactCard = ({ name, title, department, institution, location, email, ph
   return (
     <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 max-w-sm mx-auto border border-green-100 dark:border-green-900">
       {/* Header with colored background */}
-      <div className={`${bgColor} rounded-t-2xl p-6 text-white flex flex-col items-center`}>
+      <div className={`${bgColor} rounded-t-2xl p-3 text-white flex flex-col items-center`}>
         <div className="w-24 h-24 bg-white bg-opacity-20 rounded-full flex items-center justify-center mb-3 overflow-hidden border-4 border-white/30">
           {photo ? (
             <img 
@@ -23,7 +23,7 @@ const ContactCard = ({ name, title, department, institution, location, email, ph
         <p className="text-green-100 text-center mt-1 text-sm font-medium">{title}</p>
       </div>
       {/* Card content */}
-      <div className="p-6 space-y-4">
+      <div className="p-3 space-y-2">
         <div className="flex items-start space-x-3">
           <Building className="text-green-600 mt-1 flex-shrink-0" size={18} />
           <div>
@@ -56,7 +56,7 @@ const ContactCard = ({ name, title, department, institution, location, email, ph
         )}
       </div>
       {/* Action buttons */}
-      <div className="px-6 pb-6 flex space-x-2">
+      <div className="px-3 pb-3 flex space-x-1">
         {email && (
           <button 
             onClick={() => window.open(`mailto:${email}`)}
@@ -105,13 +105,13 @@ const ContactCards = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900 dark:to-green-800 py-12 px-4">
+    <div className="min-h-screen bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900 dark:to-green-800 py-6 px-2">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-12">
+        <div className="text-center mb-6">
           <h1 className="text-4xl font-extrabold text-green-700 mb-4 tracking-tight drop-shadow">Contact</h1>
           <div className="w-24 h-1 bg-green-500 mx-auto rounded"></div>
         </div>
-        <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
+        <div className="grid md:grid-cols-2 gap-4 lg:gap-6">
           {contacts.map((contact, index) => (
             <ContactCard key={index} {...contact} />
           ))}

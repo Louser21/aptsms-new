@@ -233,7 +233,7 @@ const ExecutiveCouncil = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 via-white to-green-50 py-12 px-4">
+    <div className="min-h-screen bg-gradient-to-br from-green-50 via-white to-green-50 py-4 px-2">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
@@ -248,7 +248,7 @@ const ExecutiveCouncil = () => {
             <div className="w-24 h-1 bg-green-500 mx-auto rounded-full"></div>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-2">
             {councilMembers.map((member) => (
               <MemberCard key={member.id} member={member} isCouncil={true} />
             ))}
@@ -262,7 +262,7 @@ const ExecutiveCouncil = () => {
             <div className="w-24 h-1 bg-green-500 mx-auto rounded-full"></div>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
             {executiveMembers.map((member) => (
               <MemberCard key={member.id} member={member} />
             ))}

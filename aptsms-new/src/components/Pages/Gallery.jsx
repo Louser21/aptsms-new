@@ -85,25 +85,25 @@ const ConferenceGallery = () => {
   }, [lightboxOpen, nextImage, prevImage]);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 to-emerald-100 py-8 px-4">
+    <div className="min-h-screen bg-gradient-to-br from-green-50 to-emerald-100 py-4 px-2">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold text-green-800 mb-2">Gallery</h1>
+        <div className="text-center mb-4">
+          <h1 className="text-3xl font-bold text-green-800 mb-1">Gallery</h1>
           <div className="w-24 h-1 bg-green-500 mx-auto rounded-full"></div>
-          <p className="text-lg text-gray-600 mt-4 max-w-2xl mx-auto">
+          <p className="text-sm text-gray-600 mt-2 max-w-2xl mx-auto">
             Explore moments from our conferences, workshops, and events. Click any image to view in full screen.
           </p>
         </div>
 
         {/* Gallery Card */}
         <Card>
-          <CardContent className="p-6 md:p-10">
-            <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-6 [column-fill:_balance]">
+          <CardContent className="p-3 md:p-4">
+            <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-2 [column-fill:_balance]">
               {images.map((image, index) => (
-                <div
-                  key={index}
-                  className="mb-6 break-inside-avoid group relative bg-gradient-to-br from-green-50 to-gray-100 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translate-y-2 hover:scale-105 transition-all duration-400 cursor-pointer border-2 border-green-100"
+                  <div
+                    key={index}
+                    className="mb-2 break-inside-avoid group relative bg-gradient-to-br from-green-50 to-gray-100 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 transition-all duration-400 cursor-pointer border border-green-100"
                   onClick={() => openLightbox(index)}
                 >
                   {!imageLoaded[index] && (
@@ -134,10 +134,10 @@ const ConferenceGallery = () => {
       {/* Lightbox */}
       {lightboxOpen && (
         <div className="fixed inset-0 bg-gradient-to-br from-green-900 via-black to-green-800/90 backdrop-blur-md z-50 overflow-auto">
-          <div className="min-h-screen flex items-center justify-center p-4">
+          <div className="min-h-screen flex items-center justify-center p-2">
             <button
               onClick={closeLightbox}
-              className="fixed top-6 right-6 z-10 bg-green-800/40 hover:bg-green-800/60 backdrop-blur-sm rounded-full p-3 text-white transition-all duration-200 hover:scale-110 hover:rotate-90 shadow-lg"
+              className="fixed top-4 right-4 z-10 bg-green-800/40 hover:bg-green-800/60 backdrop-blur-sm rounded-full p-2 text-white transition-all duration-200 hover:scale-110 hover:rotate-90 shadow-lg"
             >
               <X className="w-6 h-6" />
             </button>
@@ -146,14 +146,14 @@ const ConferenceGallery = () => {
               <>
                 <button
                   onClick={prevImage}
-                  className="fixed left-6 top-1/2 -translate-y-1/2 z-10 bg-green-800/40 hover:bg-green-800/60 backdrop-blur-sm rounded-full p-3 text-white transition-all duration-200 hover:scale-110 shadow-lg"
+                  className="fixed left-6 top-1/2 -translate-y-1/2 z-10 bg-green-800/40 hover:bg-green-800/60 backdrop-blur-sm rounded-full p-2 text-white transition-all duration-200 hover:scale-110 shadow-lg"
                 >
                   <ChevronLeft className="w-6 h-6" />
                 </button>
 
                 <button
                   onClick={nextImage}
-                  className="fixed right-6 top-1/2 -translate-y-1/2 z-10 bg-green-800/40 hover:bg-green-800/60 backdrop-blur-sm rounded-full p-3 text-white transition-all duration-200 hover:scale-110 shadow-lg"
+                  className="fixed right-6 top-1/2 -translate-y-1/2 z-10 bg-green-800/40 hover:bg-green-800/60 backdrop-blur-sm rounded-full p-2 text-white transition-all duration-200 hover:scale-110 shadow-lg"
                 >
                   <ChevronRight className="w-6 h-6" />
                 </button>
@@ -169,7 +169,7 @@ const ConferenceGallery = () => {
             </div>
 
             {images.length > 1 && (
-              <div className="fixed bottom-6 left-1/2 -translate-x-1/2 bg-green-800/40 backdrop-blur-sm rounded-full px-6 py-3 text-white font-semibold shadow-lg">
+              <div className="fixed bottom-4 left-1/2 -translate-x-1/2 bg-green-800/40 backdrop-blur-sm rounded-full px-4 py-2 text-white font-semibold shadow-lg text-sm">
                 {currentImage + 1} / {images.length}
               </div>
             )}

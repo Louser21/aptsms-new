@@ -5,7 +5,7 @@ const MembersList = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-50 to-white p-4 md:p-8">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-8">
+        <div className="text-center mb-4">
           <h1 className="text-4xl md:text-3xl font-bold text-gray-800 mb-2">
             Corporate Members
           </h1>

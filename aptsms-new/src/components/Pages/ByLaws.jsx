@@ -7,21 +7,21 @@ const Section = ({ title, children }) => (
     whileInView={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.5 }}
     viewport={{ once: true }}
-    className="mb-10"
+    className="mb-4"
   >
-    <h2 className="text-2xl font-bold text-green-700 mb-4 border-b pb-2">{title}</h2>
-    <div className="text-gray-800 space-y-2 text-justify">{children}</div>
+    <h2 className="text-lg font-bold text-green-700 mb-2 border-b pb-1">{title}</h2>
+    <div className="text-gray-800 space-y-1 text-justify">{children}</div>
   </motion.div>
 );
 
 const BylawsPage = () => {
   return (
-    <div className="min-h-screen bg-gray-50 py-10 px-6 md:px-20">
+    <div className="min-h-screen bg-gray-50 py-4 px-3 md:px-8">
       <motion.h1
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6 }}
-        className="text-4xl font-extrabold text-center text-green-900 mb-12"
+        className="text-3xl font-extrabold text-center text-green-900 mb-4"
       >
         Society Bylaws
       </motion.h1>
