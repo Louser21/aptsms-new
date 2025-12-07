@@ -14,7 +14,7 @@ import {
 const components = [
     { title: "Home", to: "/" },
     {
-        title: "About",
+        title: "About Us",
         to: "/about",
         children: [
             { title: "Membership", to: "/membership" },
@@ -22,7 +22,15 @@ const components = [
             { title: "List of Life Members", to: "/life-members" },
             { title: "President Message", to: "/president-message" },
             { title: "E-Magzine", to: "/e-magzine" },
+            { title: "APTSMS Presidents", to: "/aptsms-presidents" },
+            { title: "Executive Council", to: "/executive-council" },
+            { title: "Endowment Lectures", to: "/endowment-lectures" },
+            { title: "By-laws", to: "/by-laws" },
         ],
+    },
+    {
+        title: "Publications",
+        to: "/publications",
     },
     {
         title: "Events",
@@ -32,17 +40,15 @@ const components = [
             { title: "International Conferences", to: "/international-conferences" },
         ],
     },
-    {
-        title: "APTSMS Team",
-        children: [
-            { title: "APTSMS Presidents", to: "/aptsms-presidents" },
-            { title: "Executive Council", to: "/executive-council" },
-            { title: "Endowment Lectures", to: "/endowment-lectures" },
-            { title: "By-laws", to: "/by-laws" },
-        ],
-    },
+    // {
+    //     title: "APTSMS Team",
+    //     children: [
+            
+    //     ],
+    // },
     { title: "Gallery", to: "/gallery" },
-    { title: "Contact", to: "/contact" },
+    { title: "Contact Us", to: "/contact" },
+    { title: "Login", to: "/login" },
 ];
 
 export function Navbar() {
