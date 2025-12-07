@@ -88,6 +88,31 @@ const About = () => {
                             APSMS was renamed as <strong>Andhra Pradesh and Telangana Society for Mathematical Sciences</strong> (APTSMS) in 2018 in consequence of the separation of the Andhra Pradesh state as Andhra Pradesh and Telangana states.
                         </p>
 
+                        {/* Objectives moved from Home page */}
+                        <div className="mt-6 bg-green-50 border border-green-100 rounded-xl p-4 md:p-6">
+                            <h2 className="text-2xl font-bold text-green-800 mb-3">Objectives</h2>
+                            <ul className="list-disc list-inside text-gray-800 space-y-2 text-justify">
+                                <li>
+                                    To promote and advance the cause of <b>mathematical sciences</b> in <b>Andhra Pradesh</b> and <b>Telangana</b>.
+                                </li>
+                                <li>
+                                    To provide a platform for <b>researchers</b>, <b>educators</b>, and <b>students</b> to exchange ideas and present their work.
+                                </li>
+                                <li>
+                                    To organize <b>annual congresses</b>, <b>seminars</b>, <b>workshops</b>, and <b>lectures</b> for the dissemination of mathematical knowledge.
+                                </li>
+                                <li>
+                                    To encourage <b>interdisciplinary research</b> and <b>collaboration</b> among mathematical scientists.
+                                </li>
+                                <li>
+                                    To recognize and reward <b>outstanding contributions</b> and <b>young talent</b> in mathematical sciences.
+                                </li>
+                                <li>
+                                    To foster <b>camaraderie</b> and <b>intellectual interaction</b> among academics and professionals in the field.
+                                </li>
+                            </ul>
+                        </div>
+
                         <div className="mb-4">
                             <h3 className="text-base font-semibold text-green-600 mb-2">Timeline</h3>
                             <div className="space-y-2">
