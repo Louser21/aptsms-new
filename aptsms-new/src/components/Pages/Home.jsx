@@ -21,8 +21,7 @@ function Home() {
             </h1>
 
             <h1 className="text-white text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-semibold leading-tight">
-              The Official Website of
-              <br />
+             
               <span className="font-bold block mt-3">
                 Andhra Pradesh & Telangana Society for Mathematical Sciences
               </span>

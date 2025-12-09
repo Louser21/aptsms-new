@@ -14,23 +14,27 @@ import {
 const components = [
     { title: "Home", to: "/" },
     {
-        title: "About Us",
+        title: "About",
         to: "/about",
+    },{
+        title: "Executive Committee",
         children: [
-            { title: "Membership", to: "/membership" },
-            { title: "List of Corporate Members", to: "/corporate-members" },
-            { title: "List of Life Members", to: "/life-members" },
             { title: "President Message", to: "/president-message" },
-            { title: "E-Magzine", to: "/e-magzine" },
+            { title: "Membership", to: "/membership" },
             { title: "APTSMS Presidents", to: "/aptsms-presidents" },
+            { title: "List of Corporate Members", to: "/corporate-members" },
             { title: "Executive Council", to: "/executive-council" },
             { title: "Endowment Lectures", to: "/endowment-lectures" },
+            { title: "List of Life Members", to: "/life-members" },
             { title: "By-laws", to: "/by-laws" },
         ],
     },
     {
         title: "Publications",
         to: "/publications",
+        children: [
+        { title: "E-Magzine", to: "/e-magzine" },
+        ]
     },
     {
         title: "Events",
